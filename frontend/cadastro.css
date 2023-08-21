@@ -1,0 +1,227 @@
+
+* 
+{
+ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  
+    inline-size: 100vw;
+    block-size: 100vh;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  inline-size: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.content {
+  inline-size: 80%;
+  max-inline-size: 800px;
+  border: 1px solid #ffffff;
+  padding: 100px;
+  
+}
+
+.caixa-nome-filme {
+  inline-size: 650px;
+  block-size: 49px;
+    border-radius: 60px;
+    border: none;
+    padding-inline-start: 1rem;
+    background-color:#2221211b;
+    margin: 5px 21px 15px 2px;
+    
+}
+.titulo{
+    
+  inline-size: 500px;
+  block-size: 49px;
+    border-radius: 60px;
+    border: none;
+    padding-inline-start: 1rem;
+    background-color:#e1dbdb1b;
+    
+    padding-inline-start: 1rem;
+    text-align:1rem;
+    position:relative;
+  
+}
+  
+  /*color: #000000;
+    padding-inline-start: 5rem;
+    text-align:1rem;
+    position:relative;
+    inset-inline-start:1px;
+    inset-block-start: 1px;
+    font: 400 20px sans-serif;
+    border-radius: 0px;
+    border:none;
+    margin:auto;
+    border-radius: 60px;
+    border: none;
+    inline-size: 498px;
+    block-size: 47px;*/
+    
+
+
+
+
+
+
+.caixa-classificacao{
+  inline-size: 650px;
+  block-size: 49px;
+    border-radius: 60px;
+    border: none;
+    padding-inline-start: 1rem;
+    background-color:#0000001b;
+    margin: 5px 2px 15px 2px;
+}
+
+.classificacao{
+  inline-size: 500px;
+  block-size: 49px;
+    border-radius: 60px;
+    border: none;
+    padding-inline-start: 1rem;
+    background-color:#e1dbdb1b;
+    
+    padding-inline-start: 1rem;
+    text-align:1rem;
+    position:relative;
+}
+
+.caixa-ano-lancamento{
+  inline-size: 650px;
+  block-size: 49px;
+    border-radius: 60px;
+    border: none;
+    padding-inline-start:0rem;
+    background-color:#0000001b;
+    margin: 5px 2px 15px 2px;
+}
+.ano-de-lan-amento{
+  inline-size: 500px;
+  block-size: 49px;
+    border-radius: 60px;
+    border: none;
+    padding-inline-start: 1rem;
+    background-color:#e1dbdb1b;
+    
+    padding-inline-start: 1rem;
+    text-align:1rem;
+    position:relative;
+
+}
+.lançamento{
+  inline-size: 500px;
+  block-size: 49px;
+    border-radius: 60px;
+    border: none;
+    padding-inline-start: 1rem;
+    background-color:#e1dbdb1b;
+    
+    padding-inline-start: 1rem;
+    text-align:1rem;
+    position:relative;
+}
+
+.caixa-url-imagem{
+  inline-size: 650px;
+  block-size: 49px;
+  border-radius: 60px;
+  border: none;
+  padding-inline-start: 1rem;
+  background-color:#0000001b;
+  margin: 5px 2px 15px 2px;
+}
+.urlImagem{
+  inline-size: 500px;
+  block-size: 49px;
+    border-radius: 60px;
+    border: none;
+    padding-inline-start: 1rem;
+    background-color:#e1dbdb1b;
+    
+    padding-inline-start: 1rem;
+    text-align:1rem;
+    position:relative;
+}
+.caixa-detalhes-filme{
+  inline-size: 650px;
+  block-size: 162px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: none;
+  padding-inline-start: 1rem;
+  background-color:#0000001b;
+  margin: 5px 2px 15px 2px;
+  
+}
+.detalhes-do-filme{
+  color: #000000;
+  text-align:center;
+  position:relative;
+  inset-inline-start:2px;
+  inset-block-start: 2px;
+  font: 400 17px sans-serif;
+}
+.descricao{
+  inline-size: 630px;
+  block-size: 49px;
+    border-radius: 15px;
+    border: none;
+    padding-inline-start: 1rem;
+    background-color:#e1dbdb1b;
+    
+    padding-inline-start: 1rem;
+    text-align:1rem;
+    position:relative;
+}
+
+
+.cadastro-de-novo-filme {
+    color: #000000;
+    text-align: start;
+    font: 700 22px "Inter", sans-serif;
+    position: relative;
+     inset-inline-start: 30px;
+     inset-block-start: 60px;
+    
+}
+
+
+.btn-salvar {
+    position:relative;
+    inset-inline-start:220px;
+    inset-block-start: 100px;
+   
+}
+.salvar {
+  background: #16a085;
+  color: #fefefe;
+  text-align: start;
+  font: 700 22px "Inter", sans-serif;
+  position: absolute;
+  inset-inline-start:-154px;
+  inset-block-start:-76px;
+  
+}
+
+
+.caixa-botao-salvar {
+    background: #16a085;
+    border-radius: 60px;
+    inline-size: 201px;
+    block-size: 76px;
+    
+    
+}

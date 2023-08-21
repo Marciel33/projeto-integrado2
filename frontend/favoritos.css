@@ -1,0 +1,135 @@
+<!--responsavel pelas caixas :CAIXA-REMOV-FAVORITOS, CAIXA-IMAGEM-FILME, IMAGEM-DO-FILME, REMOVER-DOS-FAVORITOS
+
+body {
+   inline-size: 100vw;
+   block-size: 100vh;
+   display: flex;
+   font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.container {
+   inline-size: 100vw;
+   display:center;
+   justify-content: center;
+   align-items:flex-end;
+   flex-direction: column;
+}
+.content{
+    inline-size: 100%;
+}
+.caixa-do-filme {
+   display: flex;
+   inline-size: 340px;
+   block-size: 500px;
+   background-color: rgb(157, 154, 154);
+}
+.caixa-do-filme img {
+   display: flex;
+   inline-size: 340px;
+   block-size: 500px;
+   margin-inline-end:23px;
+  
+   
+}
+
+
+<!--caixa remover dos favoritos
+.remov-favoritos {
+   background: #010101;
+   border-radius: 60px;
+   inline-size: 260px;
+   block-size: 81px;
+}
+
+<!--fundo da caixa imagem filme
+.caixa-imagem-filme {
+   display: flex;
+   background: #000000;
+   border-radius: 21px;
+   inline-size: 340px;
+   block-size: 500px;
+}
+
+
+<!--texto remover dos favoritos
+.remover-dos-favoritos {
+   color: #000000;
+   text-align: center;
+   font: 700 23px "Inter", sans-serif;
+}
+/* Estilos para o cabeçalho */
+
+ 
+ /* Estilos para os botões de "Acessar Filme" */
+ .button {
+   background-color: #1163bb;
+   color: #0b0b0b;
+   border: none;
+   padding: 8px 12px;
+   cursor: pointer;
+ }
+ 
+ /* Estilos para a seção de conteúdo */
+ .content {
+   max-inline-size: 1100px;
+   margin: 0 auto;
+   padding: 80px;
+ }
+ 
+ /* Estilos para os cartões de filme */
+ .cartao-filme {
+   border: 1px solid #bb0e0e;
+   padding: 10px;
+   margin: 10px;
+   text-align: center;
+ }
+ 
+ .cartao-filme img {
+   max-inline-size: 200px;
+   block-size: auto;
+ }
+ 
+ /* Estilos para a caixa de busca de filmes */
+ .buscar_filme {
+   text-align: center;
+   margin-block-end: 20px;
+ }
+ .btn_remover{ 
+   padding: 3rem;
+   
+   display: flex-end;
+   justify-content: end;
+   gap: 1rem;
+   
+ }
+ .btn_remover a{
+   color: #dcd6d6;
+   text-decoration: none;
+   text-transform: capitalize;
+   background: #e91f1fcb;
+   padding: 18px 20px;
+   border-radius: 2rem;
+ }
+
+ /* Estilos para os filmes favoritos */
+ .filme-favoritos {
+   color: rgb(237, 229, 229);
+ }
+ 
+ /* Outros estilos que você pode adicionar conforme necessário */
+ 
+ /* Estilos para o rodapé */
+ footer {
+   background-color: #0c0a0a;
+   padding: 15px;
+   text-align: center;
+ }
+ 
+
+ 
+ /* Estilos para o título "Catalogo de filmes" */
+ .titulo {
+   text-align: center;
+ }
+ 
+ 

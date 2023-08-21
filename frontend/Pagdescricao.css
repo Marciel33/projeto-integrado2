@@ -1,0 +1,214 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    inline-size: 100vw;
+    block-size: 100vh;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+  
+ }
+ 
+ .container {
+    inline-size: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    flex-direction: column;
+ }
+ 
+ .content{
+     block-size: 100%;
+ }
+ 
+ .content
+ {
+    display: flex;
+    flex-direction: column;
+    inline-size: 100%;
+ }
+ 
+ .caixa-urlImagem{
+  background: #a7a5a5;
+  border-radius: 21px;
+  inline-size: 340px;
+  block-size: 500px;
+  position: relative;
+  inset-inline-start: 229px; 
+  inset-block-start: 120px;
+
+  
+}
+.urlImagem {
+  color: #000000;
+  text-align: start;
+  font: 700 40px "Inter", sans-serif;
+  position: absolute;
+  
+  
+}
+  .caixa-titulo-do-filme {
+     background: rgba(192, 192, 192, 0.93);
+     border-radius: 30px;
+     inline-size: 670px;
+     block-size: 41px;
+     position:absolute;
+     align-items:center;
+     display: flex;
+     inset-inline-start: 706px;
+     inset-block-start: 289px;
+     border:none;  
+  }
+  .titulo{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    margin-inline-start: 2%;
+  }
+  
+  .caixa-classificação-do-filme {
+    background: rgba(192, 192, 192, 0.93);
+    border-radius: 30px;
+    inline-size: 670px;
+    block-size: 49px;
+    position: absolute;
+    align-items:center;
+    display: flex;
+    inset-inline-start: 706px; 
+    inset-block-start: 341px;
+  }
+  .Classificacao{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    margin-inline-start:15px;
+  }
+  .caixa-ano-lancamento {
+    background: rgba(192, 192, 192, 0.93);
+    border-radius: 30px;
+    inline-size: 679px;
+    block-size: 49px;
+    position: absolute;
+    align-items:center;
+    display:flex;
+    inset-inline-start: 706px; 
+    inset-block-start: 406px;
+    
+  }
+  
+  .Ano-de-Lancamento{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    margin-inline-start: 2%;
+  }
+  .caixa-descricao-filme{
+    background: rgba(192, 192, 192, 0.93);
+    border-radius: 30px;
+    inline-size: 670px;
+    block-size: 162px;
+    position: absolute;
+    align-items:center;
+    display:flex;
+    inset-inline-start: 706px;
+    inset-block-start: 499px;
+    
+  }
+  .Descricao {
+    color: black;   
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    margin-inline-start: 2%; 
+  }
+  
+ 
+
+  
+  
+  .caixa-favoritar {
+    background: #16a085;
+    border-radius: 60px;
+    inline-size: 201px;
+    block-size: 76px;
+    position: absolute;
+    inset-inline-start: 706px; 
+    inset-block-start: 682px;
+  }
+  .favoritar-filme {
+    color: #ffffff;
+    text-align: start;
+    font: 700 22px "Inter", sans-serif;
+    position: absolute;
+    inset-inline-start: 732px; 
+    inset-block-start: 709px;
+  }
+  .caixa-excluir-filme{
+    background: #c0392b;
+    border-radius: 60px;
+    inline-size: 201px;
+    block-size: 76px;
+    position: absolute;
+    inset-inline-start: 942px; 
+    inset-block-start: 682px;
+  }
+  .excluir-filme {
+    color: #ffffff;
+    text-align: start;
+    font: 700 22px "Inter", sans-serif;
+    position: absolute;
+    inset-inline-start: 977px; 
+    inset-block-start: 709px;
+  }
+  
+  .caixa-editar-filme{
+    background: #f39c12;
+    border-radius: 60px;
+    inline-size: 201px;
+    block-size: 76px;
+    position: absolute;
+    inset-inline-start: 1178px; 
+    inset-block-start: 682px;
+  }
+  
+  .editar-filme {
+    color: #ffffff;
+    text-align:start;
+    font: 710 22px "Inter", sans-serif;
+    position: absolute;
+    inset-inline-start: 1219px; 
+    inset-block-start: 709px;
+  }
+  .urlImagem img {
+    min-inline-size: 200px; /* Defina o tamanho mínimo desejado */
+    min-block-size: 300px;
+    max-inline-size: 110%; /* Mantém a proporção */
+    block-size: auto;
+  }
+  .estrelas {
+    color: #060404;
+   display: flex;
+   gap: 2px;
+   
+   
+  }
+  .estrela.selecionada {
+    color: rgb(255, 0, 0); 
+  }
+  
+  

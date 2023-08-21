@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="header.css" />
+      <link rel="stylesheet" href="meu-estilo.css" />
+     
+      <title>Catalogo de filmes</title>
+   </head>
+
+   <body>
+      <div class="container">
+         <!-- cabeçalho -->
+         <div class="header">
+            <a href="#">Home</a>
+
+            <a href="cadastroEdicao.html"> novo filme </a>
+            <a href="favoritos.html"> Meus Favoritos </a>
+         </div>
+         
+         <!-- Div para exibir a lista de filmes -->
+      
+
+         <div class="content">
+
+            <div id="filmeList"></div>      
+               <div class="buscar_filme">
+                  <input
+                  type="text"
+                  class="input_busca"
+                  id="inputPesquisa"
+                  placeholder="Digite o nome de um filme"
+                  />
+                  <button 
+                  class="btn_pesquisar " 
+                  onclick="pesquisarFilmes()">Pesquisar</button>
+               </div>
+               
+               
+               <h6 class="titulo">Catalogo de Filmes</h6>
+                 
+                  <div class="catalogo_filmes" id="catalogoFilmes"> 
+
+                     <div class="catalogo_filmes">
+                        <!-- Cartão do novo filme -->
+                                                               
+                        <div 
+                            class="cartao-filme" data-filme-nome="avatar">
+                           <img 
+                           src="https://musicart.xboxlive.com/7/4d4d6500-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080" 
+                           alt="avatar" 
+                           data-filme-id="2">
+
+                           <a href="Pagdescricao.html?id=2" class="acessarFilme " onclick="acessarFilme('2')">
+                             <div class="botao-container">
+                               <button class="acessarFilmeBtn custom-btn">Acessar filme</button>
+                            </div>
+                           </a>
+                        </div>
+
+                        <div 
+                           class="cartao-filme" data-filme-nome="homemaranha">
+                           <img 
+                           src="https://musicart.xboxlive.com/7/ef2a5200-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080" 
+                           alt="homem aranha" 
+                           data-filme-id="1">
+
+                           <a href="Pagdescricao.html?id=3" 
+                           class="acessarFilme" 
+                           onclick="acessarFilme('3')">
+                           <div class="botao-container">
+                              <button 
+                              class="acessarFilmeBtn">Acessar filme</button>
+                           </div>
+                           </a>
+                        </div>
+
+                        <div 
+                         class="cartao-filme" data-filme-nome="gentegrande">
+                           <img 
+                           src="https://br.web.img3.acsta.net/c_310_420/pictures/210/299/21029996_20130821205722213.jpg" 
+                           alt="gente grande" 
+                           data-filme-id="4">
+
+                           <a 
+                           href="Pagdescricao.html?id=4" 
+                           class="acessarFilme" 
+                           onclick="acessarFilme('4')">
+                           <div class="botao-container">
+                           <button 
+                              class="acessarFilmeBtn">Acessar filme</button>
+                           </div>
+                           </a>
+                        </div>
+
+                        <div 
+                           class="cartao-filme" data-filme-nome="johnwick">
+                           <img 
+                           src="https://m.media-amazon.com/images/I/81zur+RwWHL._AC_UF894,1000_QL80_.jpg" 
+                           alt="john wick"
+                           data-filme-id="5">
+
+                           <a 
+                           href="Pagdescricao.html?id=5" 
+                           class="acessarFilme" 
+                           nclick="acessarFilme('5')">
+                             
+                           <button 
+                              class="acessarFilmeBtn">Acessar filme</button>
+                           </a>
+                        </div>
+
+                        <div 
+                        class="cartao-filme" data-filme-nome="encanto">
+                           <img 
+                           src="https://static.hd-trailers.net/images/-179969-poster-xlarge.jpg" 
+                           alt="encanto " 
+                           data-filme-id="6">
+
+                           <a 
+                           href="Pagdescricao.html?id=6" 
+                           class="acessarFilme" 
+                           onclick="acessarFilme('6')">
+                            
+                           <button 
+                              class="acessarFilmeBtn">Acessar filme</button>
+                           </a>
+                        </div>
+
+                        <div 
+                         class="cartao-filme" data-filme-nome="meumalvadofavorito">
+                           <img 
+                           src="https://br.web.img3.acsta.net/medias/nmedia/18/87/89/83/20028679.jpg " 
+                           alt="meumalvadofavorito" 
+                           data-filme-id="7">
+
+                           <a 
+                           href="Pagdescricao.html?id=7" 
+                           class="acessarFilme" 
+                           onclick="acessarFilme('7')">
+
+                              <button 
+                              class="acessarFilmeBtn">Acessar filme</button>
+                           </a>
+                        </div>
+
+                        <div 
+                         class="cartao-filme" data-filme-nome="durodeMatar">
+                           <img 
+                           src="https://br.web.img2.acsta.net/medias/nmedia/18/92/25/88/20188922.jpg" 
+                           alt="Duro de Matar" 
+                           data-filme-id="8">
+
+                           <a 
+                           href="Pagdescricao.html?id=8" 
+                           class="acessarFilme" 
+                           onclick="acessarFilme('8')">
+
+                              <button 
+                              class="acessarFilmeBtn">Acessar filme</button>
+                           </a>
+
+                        </div>
+                        <div 
+                         class="cartao-filme" data-filme-nome="pokémon">
+                           <img 
+                           src="https://admin.ultimatodobacon.com/wp-content/uploads/2023/02/Guia-dos-filmes-de-Pokemon-16.jpg"
+                           alt="Pokémon" 
+                           data-filme-id="9">
+
+                           <a 
+                           href="Pagdescricao.html?id=9" 
+                           class="acessarFilme" 
+                           onclick="acessarFilme('9')">
+
+                              <button 
+                              class="acessarFilmeBtn">Acessar filme</button>
+                           </a>
+
+                        </div>
+
+                        <div 
+                         class="cartao-filme" data-filme-nome="transformesodespertardasferas">
+                           <img 
+                           src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Affiche_transformers_rotb.jpg" 
+                           alt="Transformes o despertar das feras" 
+                           data-filme-id="10">
+
+                           <a 
+                           href="Pagdescricao.html?id=10" 
+                           class="acessarFilme" 
+                           onclick="acessarFilme('10')">
+
+                              <button 
+                              class="acessarFilmeBtn">Acessar filme</button>
+                           </a>
+
+                        </div>
+                        <div 
+                         class="cartao-filme" data-filme-nome="starwars">
+                           <img 
+                           src="https://musicart.xboxlive.com/7/83325100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"
+                           alt="Star Wars" 
+                           data-filme-id="11">
+
+                           <a 
+                           href="Pagdescricao.html?id=11" 
+                           class="acessarFilme" 
+                           onclick="acessarFilme('11')">
+
+                              <button 
+                              class="acessarFilmeBtn">Acessar filme</button>
+                           </a>
+
+                        </div>
+
+                        <div 
+                         class="cartao-filme" data-filme-nome="osmercenários">
+                           <img 
+                           src="https://br.web.img3.acsta.net/medias/nmedia/18/90/35/38/20162406.jpg " 
+                           alt="Os Mercenários" 
+                           data-filme-id="12">
+
+                           <a 
+                           href="Pagdescricao.html?id=12" 
+                           class="acessarFilme" 
+                           onclick="acessarFilme('12')">
+
+                              <button 
+                              class="acessarFilmeBtn">Acessar filme</button>
+                           </a>
+
+                        </div>
+
+                        <div 
+                         class="cartao-filme" data-filme-nome="powerrangers">
+                           <img 
+                           src="https://musicart.xboxlive.com/7/8a233d00-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080 " 
+                           alt="Power Rangers" 
+                           data-filme-id="13">
+
+                           <a 
+                           href="Pagdescricao.html?id=13" 
+                           class="acessarFilme" 
+                           onclick="acessarFilme('13')">
+
+                              <button 
+                              class="acessarFilmeBtn">Acessar filme</button>
+                           </a>
+
+                        </div>
+
+                        <div 
+                         class="cartao-filme" data-filme-nome="apocalipto">
+                           <img 
+                           src="https://xl.movieposterdb.com/08_12/2006/472043/xl_472043_fe142536.jpg" 
+                           alt="Apocalipto" 
+                           data-filme-id="14">
+
+                           <a 
+                           href="Pagdescricao.html?id=14" 
+                           class="acessarFilme" 
+                           onclick="acessarFilme('14')">
+
+                              <button 
+                              class="acessarFilmeBtn">Acessar filme</button>
+                           </a>
+
+                        </div>
+
+                        <div 
+                         class="cartao-filme" data-filme-nome="espectral">
+                           <img 
+                           src="https://woomagazine.com.br/wp-content/uploads/2016/12/oXV2ayQYUQfHwpuMdWnZF0Geng5.jpg  " 
+                           alt="Espectral" 
+                           data-filme-id="15">
+
+                           <a 
+                           href="Pagdescricao.html?id=15" 
+                           class="acessarFilme" 
+                           onclick="acessarFilme('15')">
+
+                              <button 
+                              class="acessarFilmeBtn">Acessar filme</button>
+                           </a>
+
+                        </div>
+                        <div 
+                         class="cartao-filme" data-filme-nome="asbranquelas">
+                           <img 
+                           src="https://cinepop.com.br/wp-content/uploads/2021/07/as-branquelas-cartaz.jpg   " 
+                           alt="As Branquelas" 
+                           data-filme-id="16">
+
+                           <a 
+                           href="Pagdescricao.html?id=16" 
+                           class="acessarFilme" 
+                           onclick="acessarFilme('16')">
+
+                              <button 
+                              class="acessarFilmeBtn">Acessar filme</button>
+                           </a>
+
+                        </div>
+                        <div 
+                         class="cartao-filme" data-filme-nome="panico">
+                           <img 
+                           src="https://republicadomedo.com.br/wp-content/uploads/2023/03/scream-700x1000-1.jpg  " 
+                           alt="Panico" 
+                           data-filme-id="17">
+
+                           <a 
+                           href="Pagdescricao.html?id=17" 
+                           class="acessarFilme" 
+                           onclick="acessarFilme('17')">
+
+                              <button 
+                              class="acessarFilmeBtn">Acessar filme</button>
+                           </a>
+
+                        </div>
+                        
+
+                     </div>
+                     <div class="resultados">
+                        <div class="filme-item" data-id="1"></div>
+                        <div class="filme-item" data-id="2"></div>
+                        <div class="filme-item" data-id="3"></div>
+                        <div class="filme-item" data-id="4"></div>
+                        <div class="filme-item" data-id="5"></div>
+                        <div class="filme-item" data-id="6"></div>
+                        <div class="filme-item" data-id="7"></div>
+                        <ul id="resultadoPesquisa"></ul>
+
+                     </div>   
+             </div>           
+
+
+                                              
+                  
+                 
+                  
+            
+         </div>
+      </div>
+     <script src="meuscript.js"></script>
+     
+    
+
+   </body>
+</html>

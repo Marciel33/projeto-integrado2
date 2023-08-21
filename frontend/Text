@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="header.css" />
+      <link rel="stylesheet" href="meu-estilo.css" />
+     
+      <title>Catalogo de filmes</title>
+   </head>
+
+   <body>
+      <div class="container">
+         <!-- cabeçalho -->
+         <div class="header">
+            <a href="#">Home</a>
+
+            <a href="cadastroEdicao.html"> novo filme </a>
+            <a href="favoritos.html"> Meus Favoritos </a>
+         </div>
+         
+         <!-- Div para exibir a lista de filmes -->
+         <div class="content">
+            <div class="buscar_filme">
+               <input
+                  type="text"
+                  class="input_busca"
+                  id="inputPesquisa"
+                  placeholder="Digite o nome de um filme"
+               />
+               <button class="btn_pesquisar" onclick="pesquisarFilmes()">Pesquisar</button>
+            </div>
+            <h6 class="titulo">Catalogo de Filmes</h6>
+            <div class="catalogo_filmes" id="catalogoFilmes"> <!-- Aqui você precisa de um id -->
+               <!-- Cartões de filme aqui -->
+            </div>
+         </div>
+      </div>
+      <script src="meuscript.js"></script>
+   </body>
+</html>
+
+
+
+
+
+
+
+function pesquisarFilmes() {
+   const input = document.getElementById('inputPesquisa');
+   const termo = input.value.toLowerCase();
+   const cartoes = document.querySelectorAll('.cartao-filme');
+
+   cartoes.forEach(cartao => {
+      const nomeFilme = cartao.getAttribute('data-filme-nome').toLowerCase();
+
+      if (nomeFilme.includes(termo)) {
+         cartao.style.display = 'block';
+      } else {
+         cartao.style.display = 'none';
+      }
+   });
+}

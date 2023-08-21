@@ -1,0 +1,15 @@
+.header {
+   /* inline-size: 100%; */
+   padding: 2rem;
+   display: flex;
+   justify-content: end;
+   gap: 1rem;
+}
+.header a {
+   color:#fff4f4;
+   text-decoration: none;
+   text-transform: capitalize;
+   background: #1db690;
+   padding: 20px 22px;
+   border-radius: 2rem;
+}
